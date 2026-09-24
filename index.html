@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buddies｜ペットと人のファッションスナップ</title>
+  <meta name="description" content="Buddies（バディーズ）は、ペットと飼い主のおしゃれをすくい上げるファッションスナップメディア。街と暮らしの中の“お揃い”を紹介します。">
+
+  <!-- OGP -->
+  <meta property="og:title" content="Buddies｜ペットと人のファッションスナップ">
+  <meta property="og:description" content="ペットと飼い主のおしゃれをすくい上げるファッションスナップメディア。">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#e8ddc3">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+
+  <!-- ========== HEADER（バーなし・ハンバーガー／Instagramだけ常時表示） ========== -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#" class="logo">Buddies<span class="rmark" aria-hidden="true">®</span></a>
+      <div class="header-right">
+        <a href="https://www.instagram.com/buddies.petfashion/" class="nav-instagram" target="_blank" rel="noopener">Instagram</a>
+        <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="globalNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 全画面メニュー（ハンバーガーで開閉） -->
+  <nav class="global-nav" id="globalNav" aria-label="メインナビゲーション">
+    <ul>
+      <li><a href="#snap"><span class="menu-pre">Buddies</span><span class="menu-word">Snap</span></a></li>
+      <li><a href="#interview"><span class="menu-pre">Buddies</span><span class="menu-word">Interview</span></a></li>
+      <li><a href="#pick"><span class="menu-pre">Buddies</span><span class="menu-word">Pick</span></a></li>
+    </ul>
+    <a href="https://www.instagram.com/buddies.petfashion/" class="menu-insta" target="_blank" rel="noopener">@buddies.petfashion</a>
+  </nav>
+
+  <!-- スクロール追従の縦組みラベル（各コンテンツで文字が変わる） -->
+  <div class="sticky-mark" id="stickyMark" aria-hidden="true"><span>Buddies</span></div>
+
+  <main>
+    <!-- ========== HERO ========== -->
+    <section class="hero" data-mark="Buddies">
+      <!-- 全幅のメイン画像（仮画像／あとで差し替え） -->
+      <div class="hero-bg">
+        <img class="hero-img" src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=2000&h=1400&fit=crop&auto=format&q=80" alt="ペットと飼い主のスナップ" />
+        <span class="hero-scrim" aria-hidden="true"></span>
+      </div>
+
+      <!-- ① 横に流れるロゴ帯（マーキー） -->
+      <div class="hero-marquee" aria-hidden="true">
+        <div class="hero-marquee-track">
+          <span>Buddies<sup>®</sup></span><span>Buddies<sup>®</sup></span><span>Buddies<sup>®</sup></span><span>Buddies<sup>®</sup></span><span>Buddies<sup>®</sup></span><span>Buddies<sup>®</sup></span>
+          <span>Buddies<sup>®</sup></span><span>Buddies<sup>®</sup></span><span>Buddies<sup>®</sup></span><span>Buddies<sup>®</sup></span><span>Buddies<sup>®</sup></span><span>Buddies<sup>®</sup></span>
+        </div>
+      </div>
+
+      <!-- ② 右の大きなロゴは、追従ラベル(#stickyMark)に統合しました -->
+
+      <!-- キャプション＆導線 -->
+      <div class="hero-caption reveal-hero" style="--d:0.45s">
+        <p class="hero-lead">PET × PEOPLE FASHION SNAP</p>
+        <p class="hero-credit">Photo: Rooney &amp; You — 📍Tokyo</p>
+      </div>
+
+      <a href="#snap" class="hero-viewmore reveal-hero" style="--d:0.6s">View more <span aria-hidden="true">👉</span></a>
+    </section>
+
+    <!-- ========== カテゴリー別ブロック（左にタイトル固定＋フルワイド写真2枚） ========== -->
+    <!-- ▼ 写真はすべて仮画像。あとで実際の投稿写真に差し替え -->
+
+    <!-- ▼ 完パケ画像は名前・犬種が焼き込み済みのため、文字は重ねない。投稿は data/posts.json から自動生成 -->
+
+    <!-- Buddies Snap -->
+    <section class="cat-block" id="snap" data-mark="Buddies Snap" data-nav="light">
+      <div class="cat-head reveal">
+        <h2 class="cat-title">Buddies Snap</h2>
+        <p class="cat-desc">街や自宅で出会ったペットのファッションスナップ。<br>Buddiesがセレクトする世の中のおしゃれなペットの投稿もキュレーションして紹介します。</p>
+        <a href="https://www.instagram.com/buddies.petfashion/" target="_blank" rel="noopener" class="cat-viewall">View all <span aria-hidden="true">👉</span></a>
+      </div>
+      <div class="cat-grid" data-cat="snap"></div>
+      <div class="cat-more">
+        <a href="https://www.instagram.com/buddies.petfashion/" target="_blank" rel="noopener" class="more-btn">View more on Instagram <span aria-hidden="true">👉</span></a>
+      </div>
+    </section>
+
+    <!-- Buddies Interview -->
+    <section class="cat-block" id="interview" data-mark="Buddies Interview" data-nav="light">
+      <div class="cat-head reveal">
+        <h2 class="cat-title">Buddies Interview</h2>
+        <p class="cat-desc">街中で出会ったおしゃれなペットと飼い主さんにインタビュー。ペットのリアルな声をお届け。</p>
+        <a href="https://www.instagram.com/buddies.petfashion/" target="_blank" rel="noopener" class="cat-viewall">View all <span aria-hidden="true">👉</span></a>
+      </div>
+      <div class="cat-grid" data-cat="interview"></div>
+      <div class="cat-more">
+        <a href="https://www.instagram.com/buddies.petfashion/" target="_blank" rel="noopener" class="more-btn">View more on Instagram <span aria-hidden="true">👉</span></a>
+      </div>
+    </section>
+
+    <!-- Buddies Pick -->
+    <section class="cat-block" id="pick" data-mark="Buddies Pick" data-nav="light">
+      <div class="cat-head reveal">
+        <h2 class="cat-title">Buddies Pick</h2>
+        <p class="cat-desc">編集部が選ぶ服・リード・バッグ・家具など。</p>
+        <a href="https://www.instagram.com/buddies.petfashion/" target="_blank" rel="noopener" class="cat-viewall">View all <span aria-hidden="true">👉</span></a>
+      </div>
+      <div class="cat-grid" data-cat="pick"></div>
+    </section>
+
+    <!-- ========== CONTENTS（4本柱の紹介／下に配置） ========== -->
+    <section class="contents" id="contents" data-mark="Buddies" data-nav="light">
+      <div class="contents-inner reveal">
+        <p class="sec-label">CONTENTS</p>
+        <h2 class="sec-title">Buddiesの、3つの視点。</h2>
+        <ul class="pillars">
+          <li>
+            <span class="pillar-en">Buddies Snap</span>
+            <p>街や自宅で出会ったペットのファッションスナップ。Buddiesがセレクトする世の中のおしゃれなペットの投稿もキュレーションして紹介します。</p>
+          </li>
+          <li>
+            <span class="pillar-en">Buddies Interview</span>
+            <p>街中で出会ったおしゃれなペットと飼い主さんにインタビュー。ペットのリアルな声をお届け。</p>
+          </li>
+          <li>
+            <span class="pillar-en">Buddies Pick</span>
+            <p>編集部が選ぶ服・リード・バッグ・家具など。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== FOLLOW CTA ========== -->
+    <section class="follow" data-mark="Buddies" data-nav="light">
+      <div class="follow-inner reveal">
+        <p class="follow-lead">FOLLOW US</p>
+        <h2 class="follow-title">@buddies.petfashion</h2>
+        <a href="https://www.instagram.com/buddies.petfashion/" class="follow-btn" target="_blank" rel="noopener">Instagramをフォロー</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER（DROP TOKYO構成） ========== -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="footer-inner">
+
+      <!-- ロゴ＋説明文 -->
+      <div class="footer-head">
+        <a href="#" class="footer-logo">Buddies<sup>®</sup></a>
+        <p class="footer-desc">Buddies（バディーズ）は、ペットと飼い主のファッションに光をあてるスナップメディア。街角で、散歩の途中で、いつもの部屋で。ペットと人が一緒に暮らす日々の中にあるスタイルと関係性を記録し、ペットと暮らすことから生まれる新しいファッションとカルチャーを届けます。</p>
+      </div>
+
+      <!-- 大きなスラッシュ区切りナビ -->
+      <nav class="footer-menu" aria-label="フッターナビゲーション">
+        <a href="#">Home</a><span class="fm-sep">/</span><a href="#snap">Snap</a><span class="fm-sep">/</span><a href="#interview">Interview</a><span class="fm-sep">/</span><a href="#pick">Pick</a>
+      </nav>
+
+      <!-- 下段：SNS ＋ Page Top -->
+      <div class="footer-bottom">
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/buddies.petfashion/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/>
+              <circle cx="12" cy="12" r="4.2"/>
+              <circle cx="17.6" cy="6.4" r="1.15" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+        </div>
+        <a href="#top" class="page-top" id="pageTop">Page&nbsp;Top <span class="pt-arrow" aria-hidden="true">↑</span></a>
+      </div>
+
+      <p class="copyright">© <span id="year"></span> Buddies. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=2"></script>
+</body>
+</html>

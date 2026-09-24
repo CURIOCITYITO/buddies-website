@@ -1,0 +1,19 @@
+# 既定ですべて無視（作業ファイルの流出を防ぐホワイトリスト方式）
+/*
+
+# 公開するサイトファイルだけ許可
+!/index.html
+!/favicon.svg
+!/netlify.toml
+!/robots.txt
+!/.gitignore
+!/css
+!/js
+!/data
+!/images
+
+# images はサイトで実際に使う分だけ（元データ・サムネは除外）
+/images/*
+!/images/live
+!/images/DdnMm-9BL-h.jpg
+!/images/DdfXDlHhqSp.jpg
