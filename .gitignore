@@ -15,5 +15,6 @@
 # images はサイトで実際に使う分だけ（元データ・サムネは除外）
 /images/*
 !/images/live
+!/images/hero
 !/images/DdnMm-9BL-h.jpg
 !/images/DdfXDlHhqSp.jpg

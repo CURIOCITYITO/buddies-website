@@ -51,6 +51,21 @@ if (pageTop) {
   });
 }
 
+// ヒーローの自動スライド（クロスフェード）
+const heroSlider = document.getElementById('heroSlider');
+if (heroSlider) {
+  const slides = heroSlider.querySelectorAll('.hero-img');
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (slides.length > 1 && !reduce) {
+    let idx = 0;
+    setInterval(function () {
+      slides[idx].classList.remove('is-active');
+      idx = (idx + 1) % slides.length;
+      slides[idx].classList.add('is-active');
+    }, 5000); // 5秒ごとに切り替え
+  }
+}
+
 // ページ読み込み後、ヒーローのアニメを発火
 window.addEventListener('load', () => {
   document.body.classList.add('loaded');
