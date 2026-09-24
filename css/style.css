@@ -473,6 +473,7 @@ body.loaded .hero-bigmark {
   max-width: none;                          /* 横幅を使い切る */
   font-size: clamp(0.95rem, 1.3vw, 1.12rem);
   color: var(--ink-soft);
+  word-break: auto-phrase;                  /* 日本語を文節で折る */
 }
 
 /* =========================================================
@@ -511,6 +512,7 @@ body.loaded .hero-bigmark {
   font-size: clamp(0.92rem, 1.2vw, 1.05rem);
   line-height: 1.9;
   color: var(--ink-soft);
+  word-break: auto-phrase; /* 日本語を文節で折る（単語の途中で折れない） */
 }
 .cat-viewall {
   font-family: var(--font-en);
@@ -908,6 +910,7 @@ body.loaded .hero-bigmark {
   font-size: clamp(0.95rem, 1.2vw, 1.05rem);
   line-height: 2;
   color: var(--ink-soft);
+  word-break: auto-phrase;
 }
 .about-body p + p {
   margin-top: 1.4em;
